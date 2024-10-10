@@ -1,9 +1,61 @@
-{% extends 'base.html' %}   <!-- extend the base html file -->
+{% extends 'base.html' %}
+{% load static %}
 
-<!-- define the block content -->
 {% block content %}
-    <p><a href="">home</a></p>
-    <div id="images_div">
-        <img src="" alt="photos"/>
+    <div id="main-div-indexpage">
+        <section id="image-section">
+            <!-- Looping through images_links to load images -->
+            {% for item_url in images_links %}
+            <img src="{% static item_url.url %}" alt="web_chicken photos"/>
+            {% endfor %}
+        </section>
+
+        <section id="content-section">
+            <p>Welcome to <em>Kuku Fitiii</em>, your one-stop platform for buying and selling quality chicken products!</p>
+
+            <!--hero section, our selling points and intro -->
+            <section id="hero-section">
+                <h1>Fresh Chicken, Delivered to Your Door</h1>
+                <p>Discover the best chicken products near you, or start selling today.</p>
+                <button class="cta-button">Browse Products</button>
+                <button class="cta-button">Start Selling</button>
+            </section>
+            
+            <!-- testimonials from user section-->
+            <section id="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial">
+                    <p>"The freshest chicken I've ever had! Delivery was quick and easy."</p>
+                    <p>- Jane Doe</p>
+                </div>
+            </section>
+            
+        </section>
     </div>
+
+    <!-- Infinite Auto-Scroll JavaScript -->
+    <script>
+        // Function to make the images scroll infinitely
+        function autoScroll() {
+            const imageSection = document.getElementById('image-section');
+            let scrollSpeed = 1; // Speed of the scroll (adjust as needed)
+
+            // Set up the scroll behavior
+            function startScroll() {
+                imageSection.scrollLeft += scrollSpeed;
+                // If we've scrolled to the end, reset to the beginning
+                if (imageSection.scrollLeft >= imageSection.scrollWidth - imageSection.clientWidth) {
+                    imageSection.scrollLeft = 0;
+                }
+            }
+
+            // Call the startScroll function at a set interval to create the scrolling effect
+            setInterval(startScroll, 10); // Adjust the interval for a smoother or faster scroll
+        }
+
+        // Initialize the auto-scroll on page load
+        window.onload = function() {
+            autoScroll();  // Enable infinite auto-scroll
+        };
+    </script>
 {% endblock %}

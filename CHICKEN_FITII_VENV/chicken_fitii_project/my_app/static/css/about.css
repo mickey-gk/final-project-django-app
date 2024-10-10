@@ -1,0 +1,30 @@
+#main_section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#page_name {
+    padding-left: 2rem;
+}
+#intro_div {
+    width: 60rem;
+    margin: auto;
+    height: fit-content;
+    padding: .8rem;
+    background-color: darkslategrey;
+    border-radius: .6rem;
+}
+
+#article_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#how_it_works {
+    background-color: aquamarine;
+}

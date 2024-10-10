@@ -1,0 +1,32 @@
+#main-div-indexpage {
+    display: flex;
+    flex-direction: row;
+}
+
+#image-section {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    width: 24rem;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+#image-section > img {
+    width: inherit;
+    height: inherit;
+    margin-right: 2rem;
+}
+
+#content-section {
+    padding: 2rem;
+}
+
+.testimonial {
+    background-color: blue;
+    width: auto;
+    height: fit-content;
+    margin: auto;
+
+}

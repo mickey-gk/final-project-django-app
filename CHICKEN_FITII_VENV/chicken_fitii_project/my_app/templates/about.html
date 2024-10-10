@@ -1,0 +1,74 @@
+{% extends 'base.html' %}  <!-- extend base page-->
+{% load static %}
+
+{% block content %}
+    <h3 id="page_name">ABOUT PAGE</h3>
+    <hr />
+    <section id="main_section">
+        <div id="intro_div">
+            <h4>About Kuku Fitiii</h4>
+            <p>Welcome to <em>Kuku Fitiii</em>, your one-stop platform for buying and selling quality chicken products!</p>
+            <p>Our mission is to bring local chicken sellers and buyers together through a simple, reliable, and easy-to-use online marketplace.</p>
+                
+            <h4>Our Story</h4>  
+            <p>Kuku Fitiii was created with the goal of supporting local chicken farmers by giving them a platform to reach more customers.
+                By connecting sellers directly with buyers, we help reduce market barriers and make it easier for people to access fresh, locally sourced chicken.
+            </p>
+        </div>
+        <section id="article_section">
+            <article class="article_01">
+                <h4>What We Offer
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </h4>
+                <h6>For Buyers:</h6>
+                <ul>
+                    <li>Search for nearby sellers.</li>
+                    <li>Explore various chicken types and their prices.</li>
+                    <li>Place orders directly with sellers and arrange pickups or deliveries.</li>
+                </ul>
+            </article>
+            <article classs="article_02">
+                <h4>What We Offer
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </h4>
+                <h6>For Sellers: </h6>
+                <ul>
+                    <li>Easily list your available chicken stock.</li>
+                    <li>Manage your inventory.</li>
+                    <li>Reach a wider audience and grow your customer base.</li>
+                </ul>
+            </article>
+            <article class="article_03">
+                <h4>Why Choose Us?
+                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                </h4>
+                <ul>
+                    <li><em>Ease of Use:</em> Our platform is designed to be simple, making it easy to browse, order, and manage transactions.</li>
+                    <li><em>Supporting Local Farmers:</em>We aim to boost local economies by helping small-scale chicken farmers connect directly with consumers.</li>
+                    <li><em>Sustainability:</em> By connecting buyers and sellers within the same region, we help reduce the carbon footprint associated with long-distance transportation.</li>
+                </ul>
+            </article>
+        </section>
+    </section>
+<p>
+  <section id="how_it_works">
+    <h4>How It Works
+        <i class="fa fa-project-diagram" aria-hidden="true"></i>
+    </h4>
+        <div>
+            <img src="{% static my_photo.png %}" />
+            <p>
+                Sign Up: Whether you’re a buyer or a seller, signing up is quick and easy.
+            </p>
+        </div>
+        <div>
+            <img src="{% static pic_02.png %}" />
+            <p>Browse & Sell: Buyers can browse chicken products, while sellers can list and update their available stock.</p>
+        </div>
+        <div>
+            <img src="{% static pic_03.png%}" />
+            <p>Order & Manage**: Buyers place orders, and sellers manage transactions, ensuring a smooth and transparent process.</p>
+        </div>
+  </section>
+
+{% endblock %}

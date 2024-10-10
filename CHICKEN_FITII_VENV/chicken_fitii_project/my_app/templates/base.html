@@ -6,17 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chicken_fitii_webApp</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/products.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+
+
 </head>
 <body>
     <header id="page_header">
-        <h2><a href="">chicken fitii webApp</a></h2>
-        <nav>
+        <h2><a href="{% url 'index' %}">chicken fitii webApp</a></h2>
+        <nav id="base_nav">
             <ul>
-                {% for item in list %}
-                <li></li>
+                {% for item in nav_items %}
+                    <li><a href="{% url item.url %}">{{item.name}}</a></li>
                 {% endfor %}
             </ul>
         </nav>
@@ -24,6 +31,7 @@
     <hr class="rule_01"/>
     <main class="block_content">
         {% block content %}
+        <!-- template pages display here -->
         {% endblock %}
     </main>
     <footer id="page_footer">
