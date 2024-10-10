@@ -11,24 +11,33 @@
         </section>
 
         <section id="content-section">
-            <p>Welcome to <em>Kuku Fitiii</em>, your one-stop platform for buying and selling quality chicken products!</p>
 
             <!--hero section, our selling points and intro -->
             <section id="hero-section">
-                <h1>Fresh Chicken, Delivered to Your Door</h1>
+                <p>Welcome to <em>Kuku Fitiii</em>, your one-stop platform for buying and selling quality chicken products!</p>
+                <h2>Fresh Chicken, Delivered to Your Door</h2>
                 <p>Discover the best chicken products near you, or start selling today.</p>
-                <button class="cta-button">Browse Products</button>
-                <button class="cta-button">Start Selling</button>
+                <a class="cta-button b1" href="{% url 'products' %}">Browse Products</a>
+                <a class="cta-button b2" href="{% url 'login' %}">Start Selling</a>
             </section>
             
             <!-- testimonials from user section-->
-            <section id="testimonials">
-                <h2>What Our Customers Say</h2>
+            <section class="testimonials t01">
+                <h3 style="color: darkred">What Our Customers Say</h3>
                 <div class="testimonial">
                     <p>"The freshest chicken I've ever had! Delivery was quick and easy."</p>
-                    <p>- Jane Doe</p>
+                    <p>Jane <em>---- BUYER</em></p>
                 </div>
             </section>
+
+            <section class="testimonials t02">
+                <h3 style="color:darkred">What Our Customers Say</h3>
+                <div class="testimonial">
+                    <p>"Kuku Fitiii has made it super easy to find local farmers. Highly recommend!"</p>
+                    <p>Michael <em>---- SELLER</em></p>
+                </div>
+            </section>
+
             
         </section>
     </div>

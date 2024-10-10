@@ -11,6 +11,8 @@
     width: 24rem;
     height: 30rem;
     border: 1px solid black;
+    border-radius: .4rem;
+    margin-right: .4rem;
 }
 
 #image-section > img {
@@ -20,13 +22,43 @@
 }
 
 #content-section {
-    padding: 2rem;
+    padding-left: 2rem;
+    border-left: 2px solid green;
+    border-top: 2px solid red;
+    border-bottom: 3px solid black;
+    border-top-left-radius: 10rem;
 }
 
-.testimonial {
-    background-color: blue;
-    width: auto;
-    height: fit-content;
-    margin: auto;
+#hero-section {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
 
+.testimonials {
+    background-color: darkolivegreen;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    font-size: 18px;}
+
+.t01 {
+    left: 1rem;
+    padding: 0 .8rem 0 .8rem;
+    border-radius: .8rem;
+
+}
+
+.t02 {
+    left: 14rem;
+    padding: 0 .8rem 0 .8rem;
+    border-radius: .8rem;
+}
+
+/* creating button from two a link */
+.cta-button {
+    background-color: silver;
+    border-radius: .2rem;
+    padding: .4rem;
+    font-size: 1.4rem;
+    border: 1px solid green;
 }
