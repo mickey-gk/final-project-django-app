@@ -1,8 +1,27 @@
 {% extends 'base.html' %}  <!-- extend base page-->
 {% load static %}
 
+{% block title %} LOG IN PAGE {% endblock %}
 {% block content %}
     <h3>LOG IN PAGE</h3>
     <hr />
+    <section class="login-form-section">
+        <form id="login-form">
+            <label for="user-email">Email:</label>
+            <br />
+            <input id="user-email" type="email" name="user-email" placeholder="i.e., user@...mail.com" required/>
+            <br/>
+            <label for="user-password">Password:</label>
+            <br />
+            <input type="password" id="user-password" name="user-password" required/>
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+        <div id="text-place">
+            <p>YOU DO NOT HAVE AN ACCOUNT? 
+                <a href="{% url 'register' %}"><em>click to register!</em></a>
+            </p>
+        </div>
+    </section>
 
 {% endblock %}

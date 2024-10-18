@@ -1,0 +1,30 @@
+.login-form-section {
+    width: 600px;
+    height: fit-content;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: .5rem;
+}
+
+#login-form {
+    font-size: 1.6rem;
+    background-color: aliceblue;
+}
+
+#login-form > label {
+    padding-left: .4rem;
+}
+
+#login-form > input {
+    margin: 0 .4rem;
+    width: 90%;
+}
+
+#login-form > button {
+    font-size: 1.2rem;
+    border: .1rem solid green;
+    border-radius: .4rem;
+    margin-top: 1rem;
+    margin-left: 24rem;
+    margin-bottom: 1rem;
+}
