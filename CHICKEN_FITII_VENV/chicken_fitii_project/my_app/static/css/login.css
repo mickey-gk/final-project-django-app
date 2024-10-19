@@ -4,11 +4,15 @@
     margin: auto;
     background-color: antiquewhite;
     border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    padding: .2rem;
 }
 
 #login-form {
     font-size: 1.6rem;
     background-color: aliceblue;
+    border-radius: .5rem;
 }
 
 #login-form > label {
@@ -17,7 +21,7 @@
 
 #login-form > input {
     margin: 0 .4rem;
-    width: 90%;
+    width: 80%;
 }
 
 #login-form > button {
@@ -25,6 +29,22 @@
     border: .1rem solid green;
     border-radius: .4rem;
     margin-top: 1rem;
-    margin-left: 24rem;
+    margin-left: 26rem;
     margin-bottom: 1rem;
+}
+
+#text-place {
+    width: fit-content;
+    margin: auto;
+    border-bottom: .1rem solid black;
+}
+
+#text-place > p > a {
+    background-color: rgb(202, 202, 240);
+    padding: 0 .4rem;
+    border-radius: .2rem;
+} 
+
+#text-place > p > a:hover{
+    background-color: aquamarine;
 }
