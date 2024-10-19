@@ -29,13 +29,6 @@ a:hover {
     color: darkblue;
 }
 
-#page_footer {
-    position: relative;
-    bottom: 0px;
-    background-color: black;
-    height: 5rem;
-}
-
 #base_nav {
     margin-right: .8rem;
     position: absolute;
@@ -69,4 +62,39 @@ a:hover {
 
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#page_footer {
+    background-color: black;
+    height: fit-content;
+    color: white;
+    padding: .4rem;
+}
+
+#page_footer > #contact-us {
+    border: 1px solid;
+    border-radius: .4rem;
+    width: fit-content;
+    padding: .2rem;
+}
+
+#page_footer > #contact-us > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: .4rem;
+}
+
+#page_footer > #contact-us > div > a {
+    text-decoration: none;
+    color: green;
+}
+
+#page_footer > #contact-us > div > a > i {
+    font-size: 1.4rem;
+    padding: .2rem;
+}
+
+#page_footer > #copy-right {
+    text-align: right;
+    padding-right: .2rem;
 }
